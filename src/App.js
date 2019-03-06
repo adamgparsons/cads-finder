@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import '@citizensadvice/cads/build/cads.css';
 
@@ -13,7 +12,7 @@ const Title = () => (
 // // Table Data
 class TableData extends Component {
   render() {
-    return <p> {this.props.data} </p>;
+    return <td className="b-bottom b-light-grey pv-3"> {this.props.data} </td>;
   }
 }
 
@@ -21,16 +20,11 @@ class TableData extends Component {
 class TableTitle extends Component {
   render() {
     return (
-      <div>
-        <h2> {this.props.title}</h2>
-      </div>
+      <td className="w-third b-bottom b-light-grey" width="200">
+        {' '}
+        {this.props.title}
+      </td>
     );
-  }
-}
-
-class SearchMatch extends Component {
-  render() {
-    return <div />;
   }
 }
 
@@ -57,13 +51,27 @@ class Table extends Component {
         key = row.title.toLowerCase();
       }
 
-      rowsTitle.push(<TableTitle title={row.title} />);
-      if (searchterm != '') rowsTitle.push(<SearchMatch match={key} />);
-      rowsTitle.push(<TableData data={row.content} />);
+      rowsTitle.push(
+        <tr className="mb-5">
+          <TableTitle title={row.title} /> <TableData data={row.content} />{' '}
+        </tr>
+      );
     });
 
     // Then render all. Render using childs. Send them prop.title and prop.data
-    return <div>{rowsTitle}</div>;
+    return (
+      <div>
+        <table>
+          <thead>
+            <tr className="">
+              <th className="text-left b-bottom b-light-grey pv-3">Class name</th>
+              <th className="text-left b-bottom b-light-grey pv-3">Property</th>
+            </tr>
+          </thead>
+          {rowsTitle}
+        </table>
+      </div>
+    );
   }
 }
 
