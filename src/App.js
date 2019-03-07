@@ -64,7 +64,7 @@ class Table extends Component {
         <table>
           <thead>
             <tr className="">
-              <th className="text-left b-bottom b-light-grey pv-3">Class name</th>
+              <th className="text-left b-bottom b-light-grey pv-3 mh-">Class name</th>
               <th className="text-left b-bottom b-light-grey pv-3">Property</th>
             </tr>
           </thead>
@@ -84,13 +84,16 @@ class Search extends Component {
   render() {
     return (
       <div className="mb-6">
-        <label className="bold lh-2 block mb-2">Search for a class name or property</label>
+        <label className="bold lh-2 block mb-2" for="search">
+          Search for a class name or property
+        </label>
         <input
           type="text"
           className="w-full semi-bold lh-2 inline-block input-reset ba b-width-2 b-radius-2 b-light-grey ph-4 pv-3 focus-b-heritage-yellow outline-none"
           placeholder="Start typing"
           value={this.props.searchTerm}
           onChange={this.filterList}
+          id="search"
           autoFocus
         />
       </div>
