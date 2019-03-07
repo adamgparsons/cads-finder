@@ -1,16 +1,15 @@
 {
   "main.css": "/cads-finder/static/css/main.84872f57.chunk.css",
-  "main.js": "/cads-finder/static/js/main.ae22ed7f.chunk.js",
-  "main.js.map": "/cads-finder/static/js/main.ae22ed7f.chunk.js.map",
+  "main.js": "/cads-finder/static/js/main.08348d20.chunk.js",
+  "main.js.map": "/cads-finder/static/js/main.08348d20.chunk.js.map",
   "runtime~main.js": "/cads-finder/static/js/runtime~main.4f998a25.js",
   "runtime~main.js.map": "/cads-finder/static/js/runtime~main.4f998a25.js.map",
   "static/css/2.48ba4ddf.chunk.css": "/cads-finder/static/css/2.48ba4ddf.chunk.css",
   "static/js/2.fb84b475.chunk.js": "/cads-finder/static/js/2.fb84b475.chunk.js",
   "static/js/2.fb84b475.chunk.js.map": "/cads-finder/static/js/2.fb84b475.chunk.js.map",
   "index.html": "/cads-finder/index.html",
-  "precache-manifest.e84f7668f990eee66e2aa03de9ea5189.js": "/cads-finder/precache-manifest.e84f7668f990eee66e2aa03de9ea5189.js",
+  "precache-manifest.7a00b2c63438ab6d05d86e73c3239417.js": "/cads-finder/precache-manifest.7a00b2c63438ab6d05d86e73c3239417.js",
   "service-worker.js": "/cads-finder/service-worker.js",
   "static/css/2.48ba4ddf.chunk.css.map": "/cads-finder/static/css/2.48ba4ddf.chunk.css.map",
-  "static/css/main.84872f57.chunk.css.map": "/cads-finder/static/css/main.84872f57.chunk.css.map",
-  "static/media/logo.svg": "/cads-finder/static/media/logo.5d5d9eef.svg"
+  "static/css/main.84872f57.chunk.css.map": "/cads-finder/static/css/main.84872f57.chunk.css.map"
 }
